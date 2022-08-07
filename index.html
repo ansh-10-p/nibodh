@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Javascript example</title>
+    <script>
+        let a = 10;
+        let b = 20;
+        let c;
+        function methodexample() {
+            window.open('https://youtu.be/dQw4w9WgXcQ');
+        }
+        function reveal() {
+            document.getElementById("reveal-heading").innerHTML = "The manipulatable values are: " + a + " and " + b;
+        }
+        function add() {
+            c = a + b;
+            alert(c);
+        }
+        function sub() {
+            c = a - b;
+            alert(c);
+        }
+        function div() {
+            c = a / b;
+            alert(c);
+        }
+        function mul() {
+            c = a * b;
+            alert(c);
+        }
+        function mod() {
+            c = a % b;
+            alert(c);
+        }
+    </script>
+
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-attachment: fixed;
+        }
+        .reveal {
+            background-image: linear-gradient(#ffffff00, #ffffff00);
+            border-radius: 10px;
+        }
+
+        .contentdiv {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            align-content: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background-image: linear-gradient(#ffd2d2, #ffffff76);
+            padding: 10px;
+            border-radius: 25px;
+            margin: 5px;
+        }
+        button:hover{
+            transition-duration: 500ms;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body background="./bg.jpg">
+    <div class="contentdiv">
+        <button id="someid" onclick="methodexample()">definitely not rickroll</button><br><br>
+
+        <h3 id="reveal-heading">tap the reveal button</h3>
+        <button onclick="reveal()" class="reveal"> reveal </button><br><br>
+
+        <button onclick="add()">add</button><br>
+        <button onclick="sub()">sub</button><br>
+        <button onclick="div()">div</button><br>
+        <button onclick="mul()">mul</button><br>
+        <button onclick="mod()">mod</button><br>
+    </div>
+</body>
+
+</html>

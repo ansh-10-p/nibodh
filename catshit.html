@@ -1,1 +1,95 @@
+<!DOCTYPE html>
 
+<head>
+    <title>Something doc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+        .questions {
+            border: 2px solid black;
+            margin: 1em 0px;
+            padding: 4px;
+            background-color: #ffffff8d;
+            border-radius: 20px;
+        }
+
+        @media (width: 480px) {
+            .questions {
+                background-color: #90ee90;
+            }
+
+            .bodycrap {
+                align-content: center;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #ffffff5b;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        button {
+            padding: 5px;
+            background-color: #ffffff3c;
+            border-radius: 20px;
+            margin: 1em;
+        }
+
+        .bodycrap {
+            align-content: center;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            background-color: #ffffff5b;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body background="./img.jpg">
+    <div class="bodycrap">
+        <h1>Cats </h1>
+        <h2>something about cats</h2>
+        <p>
+            this should redirect you to another <a
+                href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-68">link</a>
+        </p>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="">
+
+        <ol>
+            <li>ordered item 1</li>
+        </ol>
+        <ul>
+            <li>unordered item 1</li>
+        </ul>
+
+        <form action="https://youtu.be/dQw4w9WgXcQ">
+            <div class="questions">
+                <legend>dum questions?</legend>
+                <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked=""> sure</label>
+                <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> not so sure</label>
+            </div>
+            <div class="questions">
+                <legend>another dum question?</legend>
+                <label><input type="radio"> sure</label>
+                <label><input type="radio"> not so sure</label>
+            </div>
+            <button type="submit">submit</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
